@@ -2,7 +2,7 @@
 Analyze feeds on instagram -> filter comments for keywords, get post analytics
 
 ```
-requirements: pip install InstagramAPI
+requirements: follow install instructions > https://github.com/LevPasha/Instagra-api-python/
 ```
 
 ```
