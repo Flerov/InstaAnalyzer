@@ -175,7 +175,8 @@ def load_post_comments(post):
 def analyze_post_comments(username, mediacomments):
     try:
         while True:
-            expression = str(input(sys.stdout.write("\033[0;34mExpression: ")))
+            sys.stdout.write("\033[0;34mExpression:")
+            expression = str(input("> "))
             filename = username + '_' + expression + '.txt'
             filteredcomments = []
             for i in mediacomments:
@@ -280,8 +281,8 @@ def main():
         sys.exit(0)
     try:
         sys.stdout.write("\033[0;34mLoad a session?[Yes/No]\033[0;0m\n")
-        input = str(input("> "))
-        if 'y' in input.lower():
+        inp = str(input("> "))
+        if 'y' in inp.lower():
             session = handle_session()
         while True:
             get_post()
